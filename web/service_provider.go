@@ -9,10 +9,13 @@ import (
 	"github.com/urionz/service/config"
 )
 
-func NewServiceProvider(app goofy.IApplication) {
+func NewServiceProvider(app goofy.IApplication) error {
 	webEngine := iris.New()
 	app.AddCommanders(&engine{
 		Application: webEngine,
+	})
+	return app.Provide(func() *iris.Application {
+		return webEngine
 	})
 }
 
