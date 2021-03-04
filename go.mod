@@ -11,6 +11,8 @@ require (
 	github.com/jinzhu/inflection v1.0.0
 	github.com/k0kubun/colorstring v0.0.0-20150214042306-9440f1994b88 // indirect
 	github.com/kataras/iris/v12 v12.2.0-alpha2.0.20210219075829-bfbed2f84174
+	github.com/lestrrat-go/file-rotatelogs v2.4.0+incompatible
+	github.com/lestrrat-go/strftime v1.0.4 // indirect
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/stretchr/testify v1.7.0
 	github.com/urionz/cobra v1.1.8
@@ -21,6 +23,8 @@ require (
 	github.com/urionz/goutil v0.4.1
 	github.com/urionz/ini v1.1.1-0.20210301084658-9746b6337838
 	github.com/yudai/pp v2.0.1+incompatible // indirect
+	go.uber.org/multierr v1.6.0 // indirect
+	go.uber.org/zap v1.16.0
 	gorm.io/driver/mysql v1.0.4
 	gorm.io/gorm v1.20.12
 )
